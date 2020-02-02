@@ -30,3 +30,7 @@ body {
 #navbar {
   padding: 0px;
 }
+
+.navbarLink {
+  padding: 10px;
+}
