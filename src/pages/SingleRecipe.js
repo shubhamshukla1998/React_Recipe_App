@@ -51,9 +51,14 @@ export default class SingleRecipe extends Component {
         <div className="container">
           <div className="row">
             <div className="col-10 mx-auto col-md-6 my-3">
-              <h2 className="text-uppercase text-orange text-center">
+              <h2 className="text-uppercase  text-center etched-text">
                 loading recipe....
               </h2>
+              <div className="bouncing-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -74,6 +79,7 @@ export default class SingleRecipe extends Component {
             />
             <h4 className="my-2">{this.state.recipeSummary.title}</h4>
             <p
+              id="summary"
               dangerouslySetInnerHTML={{
                 __html: this.state.recipeSummary.summary
               }}

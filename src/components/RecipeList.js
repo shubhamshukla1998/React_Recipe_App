@@ -9,7 +9,7 @@ export default function RecipeList(props) {
       <div className="container py-5">
         <div className="row">
           <div className="col-10 mx-auto col-md-6 text-center mb-3 ">
-            <h1 className="text-slanted">RECIPE LIST</h1>
+            <h1 className="text-slanted gradient-text">RECIPE LIST</h1>
           </div>
         </div>
         <div className="row">

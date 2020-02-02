@@ -25,13 +25,6 @@ export default class Recipe extends Component {
             <Link to={`/recipes/${id}/information`} className="btn btn-primary">
               Details
             </Link>
-            {/* <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-success mx-2 ">
-              Recipe Url
-            </a> */}
           </div>
         </div>
       </div>
