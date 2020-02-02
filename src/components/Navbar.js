@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -23,19 +23,23 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarColor02">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item ">
-              <Link to="/" className="nav-link active">
+              <NavLink
+                exact
+                to="/"
+                className="nav-link"
+                activeClassName="active">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/recipes" className="nav-link">
+              <NavLink exact to="/recipes" className="nav-link">
                 Recipes
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">
+              <NavLink exact to="/about" className="nav-link">
                 About
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
